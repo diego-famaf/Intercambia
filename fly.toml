@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for exchangeapp-diego859 on 2024-03-27T04:06:38-03:00
+# fly.toml app configuration file generated for exchangeapp-diego859 on 2024-03-27T05:40:46-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = "exchangeapp-diego859"
-primary_region = "scl"
+primary_region = 'scl'
 
 [build]
   image = "diego859/exchangeapp:latest"
