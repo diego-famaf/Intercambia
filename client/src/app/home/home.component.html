@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div *ngIf="!registerMode" style= "text-align: center;">
+        <h1>Encuentra tu Trueque</h1>
+        <p class="lead">Entra para ver tus trueques... ¡todo lo que necesitas hacer es registrarte!</p>
+        <div class="text-center">
+            <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Registrarse</button>
+            <button class="btn btn-primary btn-info btn-lg ">Aprender mas..</button>
+        </div>
+    </div>
+
+    <div *ngIf="registerMode" class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+            </div>
+        </div>
+    </div>
+</div>
