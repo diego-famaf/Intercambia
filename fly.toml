@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for exchangeapp-diego859 on 2024-03-27T08:24:35-03:00
+# fly.toml app configuration file generated for exchangeapp-diego859 on 2024-03-29T03:15:22-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -10,9 +10,9 @@ primary_region = "scl"
   image = "diego859/exchangeapp:latest"
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
-  CloudinarySettings__CloudName="dx8ijakgv"
-  CloudinarySettings__ApiKey="629517189458571"  
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "629517189458571"
+  CloudinarySettings__CloudName = "dx8ijakgv"
 
 [http_service]
   internal_port = 8080
